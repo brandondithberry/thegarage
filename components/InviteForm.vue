@@ -21,7 +21,7 @@
       <input id="email" type="email" name="email" required />
       <label for="company">Company</label>
       <input id="company" type="text" name="company" required />
-      <h4>We will require all attendees to show proof of vaccination or be tested on the day of the event.</h4>
+      <h4 class="mt-4">We will require all attendees to show proof of vaccination or be tested on the day of the event.</h4>
       <label><input id="yes" type="radio" name="vaccinated" value="Yes" /> Yes, I am fully vaccinated.</label>
       <label><input id="no" type="radio" name="vaccinated" value="No" /> No, I am not fully vaccinated.</label>
       <button type="submit" class="btn">Submit</button>
