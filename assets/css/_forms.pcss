@@ -1,54 +1,46 @@
+@layer base {
+  input {
+    @apply inline w-full border-primary border-2 p-2;
+    box-shadow: 0px 0px 5px #0060a9, inset 0px 0px 5px #0060a9;
+    background: #03001377;
+    transition: all 0.4s ease;
+    color: #fff;
+  }
 
-form .btn {
-  width: 100%;
-}
+  label {
+    @apply text-left text-lg block py-2 m-0;
+  }
 
-input[type='text'],
-input[type='email'] {
-  @apply inline w-full py-3;
-}
+  button[type="submit"] {
+    @apply w-full;
+  }
 
-label {
-  @apply text-lg block py-2 m-0;
-}
+  input[type='radio'] {
+    @apply w-auto;
+    box-shadow: none;
+  }
 
-input[type='checkbox'] {
-  @apply inline py-3;
-}
+  input[type='radio']:after {
+    background: #0060a9;
+  }
 
-input[type='checkbox']:after {
-  background: #0060a9;
-}
+  input[type='radio']:checked:before {
+    background: #0060a9;
+  }
 
-input[type='checkbox']:checked:before {
-  background: #0060a9;
-}
+  input:focus,
+  input:focus-visible,
+  input:active {
+    box-shadow: 0px 0px 10px #acf2fd, inset 0px 0px 5px #acf2fd;
+  }
 
-input[type='text'],
-input[type='email'] {
-  @apply border-primary border-2 p-2;
-  box-shadow: 0px 0px 5px #0060a9, inset 0px 0px 5px #0060a9;
-  background: #03001377;
-  transition: all 0.4s ease;
-  color: #fff;
-}
-
-input[type='text']:focus,
-input[type='text']:focus-visible,
-input[type='text']:active,
-input[type='email']:focus,
-input[type='email']:focus-visible,
-input[type='email']:active {
-  border-color: #acf2fd;
-  box-shadow: 0px 0px 10px #acf2fd, inset 0px 0px 5px #acf2fd;
-}
-
-.hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+  .hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 }
