@@ -19,8 +19,8 @@
       <input id="lastname" type="text" name="lastname" />
       <label for="email">Email</label>
       <input id="email" type="email" name="email" required />
-      <label><input id="yes" type="radio" name="vaccinated"> Yes, I am fully vaccinated.</label>
-      <label><input id="no" type="radio" name="vaccinated"> No, I am not fully vaccinated.</label>
+      <label><input id="yes" type="radio" name="vaccinated" value="yes"> Yes, I am fully vaccinated.</label>
+      <label><input id="no" type="radio" name="vaccinated" value="no"> No, I am not fully vaccinated.</label>
       <button type="submit">Submit</button>
     </form>
   </div>
