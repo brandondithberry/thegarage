@@ -13,39 +13,20 @@
         </label>
       </p>
       <input type="hidden" name="form-name" value="invitation" />
-      <label for="name">Name</label>
-      <input id="name" type="text" name="name" />
+      <label for="firstname">First Name</label>
+      <input id="firstname" type="text" name="firstname" />
+      <label for="lastname">Last Name</label>
+      <input id="lastname" type="text" name="lastname" />
       <label for="email">Email</label>
       <input id="email" type="email" name="email" required />
-      <label for="feedback">What is your feedback?</label>
-      <textarea id="feedback" wrap="soft" name="feedback" required></textarea>
+      <label><input id="yes" type="radio" name="vaccinated"> Yes, I am fully vaccinated.</label>
+      <label><input id="no" type="radio" name="vaccinated"> No, I am not fully vaccinated.</label>
       <button type="submit">Submit</button>
     </form>
   </div>
 </template>
 
 <style scoped>
-.invite-form {
-  margin: 40px 40px;
-  min-width: 250px;
-  width: 45%;
-}
-input,
-textarea,
-button {
-  font-size: inherit;
-  margin: 15px 0;
-  padding: 12px 20px;
-  width: 100%;
-}
-
-button {
-  background-color: teal;
-  border: 1px solid black;
-  color: white;
-  width: 50%;
-}
-
 .hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
