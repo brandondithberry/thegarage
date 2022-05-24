@@ -1,0 +1,69 @@
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  a,
+  b {
+    @apply font-sans;
+  }
+
+  h1 {
+    @apply text-3xl uppercase;
+    letter-spacing: 0.3rem;
+    line-height: 120%;
+  }
+
+  h2 {
+    @apply text-2xl uppercase;
+    letter-spacing: 0.2rem;
+    ine-height: 120%;
+  }
+
+  h3 {
+    @apply text-lg;
+    ine-height: 110%;
+  }
+
+  h4 {
+    @apply text-lg font-bold;
+    ine-height: 110%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    @apply transition-colors duration-200 ease-in-out;
+    & + h1,
+    & + h2,
+    & + h3,
+    & + h4,
+    & + h5,
+    & + h6,
+    & + p {
+      @apply mt-4;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    h1 {
+      @apply text-2xl;
+    }
+
+    h2 {
+      @apply text-lg;
+    }
+
+    p, a {
+      font-size: 16px;
+    }
+  }
+}

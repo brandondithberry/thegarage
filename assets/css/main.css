@@ -1,0 +1,11 @@
+@import './_vars.pcss';
+@import './_globals.pcss';
+@import './_animations.pcss';
+
+/* @layer base START */
+@import './_typography.pcss';
+@import './_btns.pcss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
