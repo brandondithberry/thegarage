@@ -20,8 +20,7 @@
         >! Happy coding!
       </p>
     </div>
-    <FeedbackForm />
-    <JokeBlock />
+    <InviteForm />
   </main>
 </template>
 

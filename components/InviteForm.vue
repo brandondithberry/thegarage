@@ -1,9 +1,9 @@
 <template>
-  <div class="feedback-form">
+  <div class="invite-form">
     <form
       netlify
       netlify-honeypot
-      name="feedback"
+      name="invitation"
       method="POST"
       action="/success"
     >
@@ -12,7 +12,7 @@
           Don’t fill this out if you’re human: <input name="bot-field" />
         </label>
       </p>
-      <input type="hidden" name="form-name" value="feedback" />
+      <input type="hidden" name="form-name" value="invitation" />
       <label for="name">Name</label>
       <input id="name" type="text" name="name" />
       <label for="email">Email</label>
@@ -25,7 +25,7 @@
 </template>
 
 <style scoped>
-.feedback-form {
+.invite-form {
   margin: 40px 40px;
   min-width: 250px;
   width: 45%;
