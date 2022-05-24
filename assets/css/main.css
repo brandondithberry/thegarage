@@ -1,6 +1,7 @@
 @import './_vars.pcss';
 @import './_globals.pcss';
 @import './_animations.pcss';
+@import './_forms.pcss';
 
 /* @layer base START */
 @import './_typography.pcss';
