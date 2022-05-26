@@ -17,7 +17,8 @@
       <div class="center">
         <img class="inline" src="~/static/wordmark.png" width="240px" />
         <h1>Step Into Our <b>Metaverse</b></h1>
-        <h2 class="lg:hidden">View on Desktop for the Best Experience</h2>
+        <h2>JUNE 18, 2022</h2>
+        <h3 class="lg:hidden">View on Desktop for the Best Experience</h3>
         <div class="btns">
           <button class="btn" @click="interactPage">INTERACT</button
           ><button class="btn" @click="invitePage">VIEW INVITE</button>
@@ -39,14 +40,17 @@
           pieces, 3D scanning booths, and so much more as we explore the future
           together.
         </p>
+        <h4>
+          THE GARAGE<br>@ INDUSTRY CITY<br>86 34TH ST, BUILDING 6, 4TH FL<br>BROOKLYN, NY 11232<br>8:00 PM - 2:00AM<br>ATTIRE: METAVERSE CHIC
+        </h4>
         <InviteForm />
         <FooterBlock />
       </div>
     </section>
 
     <section id="interact" class="content" v-if="interact">
-      <button class="back" @click="closeInteract"><h2>← BACK</h2></button>
       <h2 class="mouse hidden lg:block">MOVE MOUSE</h2>
+      <button class="back" @click="closeInteract"><h2>← BACK</h2></button>
       <FooterBlock class="absolute bottom-0 left-0" />
     </section>
   </main>
@@ -177,9 +181,9 @@ export default {
     max-width: 500px;
     z-index: 1000;
 
-    p {
-      border-bottom: 1px solid #acf2fd;
-      padding-bottom: 1rem;
+    h4 {
+      border: 1px solid #acf2fd;
+      padding: 1rem;
     }
   }
 }
@@ -193,7 +197,7 @@ export default {
 #interact {
   .mouse {
     @apply fixed left-10 text-xl;
-    z-index: 2000;
+    z-index: 3000;
   }
 }
 </style>
